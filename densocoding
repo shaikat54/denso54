@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int x,total=0;
+    float p;
+    scanf("%d",&x);
+    scanf("%f",&p);
+    while (x !=0) 
+    {
+        total =total+x;
+        x = trunc(x - ((p * x) / 100));
+    }
+    printf("%d",total);
+    return 0;
+
+}
